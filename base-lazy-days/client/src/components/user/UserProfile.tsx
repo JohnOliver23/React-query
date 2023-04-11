@@ -12,7 +12,6 @@ import {
 import { Field, Form, Formik } from 'formik';
 import { ReactElement } from 'react';
 import { Redirect } from 'react-router-dom';
-
 import { usePatchUser } from './hooks/usePatchUser';
 import { useUser } from './hooks/useUser';
 import { UserAppointments } from './UserAppointments';
@@ -33,7 +32,7 @@ export function UserProfile(): ReactElement {
   }
 
   return (
-    <Flex minH="84vh" align="center" justify="center">
+    <Flex minH="84vh" textAlign="center" justify="center">
       <Stack spacing={8} mx="auto" w="xl" py={12} px={6}>
         <UserAppointments />
         <Stack align="center">

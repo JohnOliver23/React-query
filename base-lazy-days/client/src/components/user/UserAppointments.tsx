@@ -12,8 +12,7 @@ import {
 import dayjs from 'dayjs';
 import { ReactElement } from 'react';
 import { ImCancelCircle } from 'react-icons/im';
-import { Link, Redirect } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 import type { Appointment } from '../../../../shared/types';
 import { useCancelAppointment } from '../appointments/hooks/useCancelAppointment';
 import { useUser } from './hooks/useUser';
@@ -69,7 +68,7 @@ export function UserAppointments(): ReactElement | null {
 
   return (
     <Box>
-      <Heading mt={10} align="center">
+      <Heading mt={10} textAlign="center">
         Your Appointments
       </Heading>
       <Center>
